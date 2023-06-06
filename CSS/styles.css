@@ -1,0 +1,189 @@
+body {
+    background-color: #082B59;
+    margin:0;
+    padding:0;
+    font-family: 'Lato', sans-serif;
+    line-height: 2;
+  }
+  h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+  }
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0;
+  }
+  h2 { 
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+    font-size: 1.7rem;
+
+  }
+  /* make images flexible */
+  img {
+    max-width: 150px;
+  }
+  a {
+    color: #59331d;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  header {
+    border-bottom: 10px solid #d98555;
+  }
+  .container {
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    gap: 2rem;
+  }
+  .card {
+    flex-basis:30%;
+  }
+
+  html {
+    box-sizing: border-box;
+  }
+  
+  /* navbar styling */
+
+  nav {
+    margin-right: 1rem;
+  }
+  nav ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+  nav li {
+    margin: 0rem 1rem 1rem 1rem;
+    font-size: 1.5rem;
+  }
+  /* max width on the image in pixels */
+  nav .logo img {
+    max-width: 200px;
+  }
+  /* flex basis on the image container, li */
+  nav .logo {
+    background-color: transparent;
+    margin: 5;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem 1rem;
+    margin-top: 3rem;
+    border-radius: 10px
+  }
+  nav a:hover {
+    color: #d98555;
+  }
+  nav .logo a {
+    background-color: transparent;
+    margin: 0;
+  }
+  .logo {
+    margin-right: auto;
+  }
+  /* establishes a white background */
+  .main-bkgd {
+    background: #ffffff url(https://assets.codepen.io/6306176/gulp-bean-bkgd.jpg) repeat-x bottom;
+    padding-bottom: 300px;
+  }
+  /* sits inside of the white background, centered */
+  .main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  article {
+    flex-basis: 73%;
+    font-size: 1.3rem;
+  }
+
+  figure {
+    margin: 2rem 0 0 0;
+    border-radius: 10px;
+  }
+  figure img {
+    border-radius: 10px;
+    max-width: 110%;
+    flex-basis: 25%;
+  }
+  figcaption {
+    color: #f2f2f2;
+    padding: 0.5rem;
+  }
+  .button {
+    display: inline-block;
+    background-color: #59331D;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    margin: 0;
+    color: #f2f2f2;
+    text-decoration: none;
+    border: 3px solid #59331d;
+  }
+  .button:hover {
+    background-color: #f2f2f2;
+    color: #59331d;
+  }
+  footer {
+    color: #f2f2f2;
+    text-align: center;
+    border-top: 10px solid #d98555;
+  }
+  footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  footer a {
+    color: #f2f2f2;
+    font-size: 2rem;
+    display: block;
+    margin: 0 1rem 3rem 1rem;
+  }
+  @media (max-width: 550px) {
+    nav{
+      margin: 0 1 rem;
+    }
+    nav ul {
+      display: block;
+    }
+    nav a {
+      margin: 0 0 2rem 0;
+      text-align: center;
+    }
+    .container {
+      display:block;
+    }
+    .card {
+      padding: 0 1rem;
+    }
+  }
+  @media (max-width: 900px) {
+    .logo {
+      flex-basis: 100%;
+      text-align: center;
+      margin: 0;
+    }
+    nav ul {
+      justify-content: center;
+    }
+    nav a {
+      margin: 0 0 3rem 0;
+    }
+  }
+
